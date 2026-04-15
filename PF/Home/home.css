@@ -1,0 +1,43 @@
+.titulo {
+    color: aqua;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+}
+
+.descrp {
+    color: red;
+}
+
+.main {
+    display: block;
+    margin: 10px auto;
+    border-radius: 20px;
+    background-color: yellow;
+    font-size: medium;
+    align-self: center;
+
+}
+
+.tod {
+    border-radius: 20px;
+    background-color: seagreen;
+    display: block;
+    margin: 10px auto;
+}
+
+.precios1 {
+    background-color: white;
+    text-align: center;
+}
+
+.precios2 {
+    background-color: gray;
+    text-align: center;
+}
+
+p {
+    color: red;
+}
