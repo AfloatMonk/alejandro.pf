@@ -1,14 +1,16 @@
-.titulo {
-    color: aqua;
+.logo {
+    display: flex;
+    justify-content: center;
 }
 
-img {
-    display: block;
-    margin: 10px auto;
+.lema {
+    display: flex;
+    justify-content: center;
+    margin-top: -25px;
 }
 
 .descrp {
-    color: red;
+    color: rgb(0, 255, 55);
 }
 
 .main {
@@ -27,17 +29,26 @@ img {
     display: block;
     margin: 10px auto;
 }
-
-.precios1 {
+.globos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 36px;
+}
+.precios1, .precios2 {
     background-color: white;
-    text-align: center;
+    border-radius: 50%;
+    padding: 40px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.precios2 {
-    background-color: gray;
-    text-align: center;
-}
+
 
 p {
-    color: red;
+    color: rgb(174, 0, 255);
 }
