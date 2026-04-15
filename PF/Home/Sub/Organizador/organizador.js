@@ -38,3 +38,4 @@ const calendar = document.getElementById("calendar");
                 calendar.appendChild(dayDiv);
             });
         }
+        
