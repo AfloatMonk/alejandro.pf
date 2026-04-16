@@ -135,7 +135,6 @@ nav ul li a:hover {
 
 .precios1,
 .precios2 {
-    background-color: greenyellow;
     border-radius: 38%;
     padding: 40px;
     width: 300px;
@@ -144,10 +143,11 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
 }
-
+.precios1 {
+    background-color: brown;
+}
 .precios2 {
     background-color: aqua;
-
 }
 
 
