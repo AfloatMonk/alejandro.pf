@@ -99,7 +99,7 @@ nav ul li a:hover {
     align-self: center;
 
 }
-/*Boton de ver todos los planes*/
+/*Boton de ver todos los planes NO TOCAR QUE HA COSTADO DEMASIADO */
 .tod {
     background-color: rgb(42, 39, 37);
     color: rgb(212, 176, 140);
@@ -115,6 +115,7 @@ nav ul li a:hover {
     border-style: double;
     margin:0 auto;
     width: fit-content;
+    cursor:pointer;
 }
 /*Antiguo 
 .tod {
