@@ -10,14 +10,15 @@ nav>ul {
     padding: 0;
     margin: 0;
     display: flex;
-    background-color: aqua;
+    background-color: rgb(15, 24, 32);
     align-items: stretch;
     height: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Menu de navegación de elementos lista*/
 nav ul li {
-    color: rgb(0, 102, 255);
+    color: white;
     position: relative;
     list-style: none;
     display: flex;
@@ -30,7 +31,7 @@ nav ul li ul {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: aquamarine;
+    background-color: rgb(15, 24, 32);
     min-width: 189px;
     padding: 0;
     flex-direction: column;
@@ -68,8 +69,10 @@ nav ul li a {
 
 /*Pa poner lo que hace cuando pasas raton encima de los enlaces*/
 nav ul li a:hover {
-    background-color: #2ecc71;
-    color: blue;
+    background-image:linear-gradient(to right, rgba(129, 108, 103),rgba(93, 77, 73));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .logo {
@@ -96,14 +99,31 @@ nav ul li a:hover {
     align-self: center;
 
 }
-
+/*Boton de ver todos los planes*/
+.tod {
+    background-color: rgb(42, 39, 37);
+    color: rgb(212, 176, 140);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    border-radius: 55px;
+    padding: 10px 30px;
+    border: 2px solid rgb(212, 176, 140);
+    outline: 1px solid rgb(212, 176, 140);
+    outline-offset: -5px;
+    display: flex;
+    align-items: center;
+    border-style: double;
+    margin:0 auto;
+    width: fit-content;
+}
+/*Antiguo 
 .tod {
     border-radius: 20px;
     background-color: seagreen;
     display: block;
     margin: 10px auto;
 }
-
+*/
 .globos {
     display: flex;
     justify-content: space-around;
