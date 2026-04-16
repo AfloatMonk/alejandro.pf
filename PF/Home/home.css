@@ -5,7 +5,7 @@ a {
 }
 
 /* Crear barra navegación (Horizontal vaya) */
-nav > ul {
+nav>ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -14,6 +14,7 @@ nav > ul {
     align-items: stretch;
     height: 100%;
 }
+
 /* Menu de navegación de elementos lista*/
 nav ul li {
     color: rgb(0, 102, 255);
@@ -22,36 +23,41 @@ nav ul li {
     display: flex;
     align-items: center;
 }
+
 /*Submenu de la guía se deberia de desplegar cuando se pasa raton*/
 nav ul li ul {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0; 
+    left: 0;
     background-color: aquamarine;
     min-width: 189px;
     padding: 0;
     flex-direction: column;
 }
+
 /*Que se muestre el menu de debajo guia ejercicios, y funcione como submenu cuadno pasas raton*/
-nav ul li:hover > ul {
+nav ul li:hover>ul {
     display: flex;
-    
+
 }
+
 /*Que cada uno de submenu vayan uno abajo otro*/
 nav ul li ul li {
     display: block;
-    
+
 }
+
 /*Que se ponga cada uno completo del submenu*/
 nav ul li ul li a {
     display: block;
     padding: 10px;
     text-align: center;
 }
+
 /*Estilos de los enlaces pa que no parezcan cuadrados pequeños, se rellene entero vaya*/
-nav ul li a{
-    display:flex;
+nav ul li a {
+    display: flex;
     align-items: center;
     justify-content: center;
     padding: 15px 20px;
@@ -59,8 +65,9 @@ nav ul li a{
     transition: background-color 0.6s;
     box-sizing: border-box;
 }
+
 /*Pa poner lo que hace cuando pasas raton encima de los enlaces*/
-nav ul li a:hover{
+nav ul li a:hover {
     background-color: #2ecc71;
     color: blue;
 }
@@ -96,6 +103,7 @@ nav ul li a:hover{
     display: block;
     margin: 10px auto;
 }
+
 .globos {
     display: flex;
     justify-content: space-around;
@@ -103,7 +111,9 @@ nav ul li a:hover{
     width: 100%;
     margin-top: 36px;
 }
-.precios1, .precios2 {
+
+.precios1,
+.precios2 {
     background-color: greenyellow;
     border-radius: 38%;
     padding: 40px;
@@ -113,8 +123,9 @@ nav ul li a:hover{
     flex-direction: column;
     align-items: center;
 }
+
 .precios2 {
-        background-color: aqua;
+    background-color: aqua;
 
 }
 
