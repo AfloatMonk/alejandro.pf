@@ -131,17 +131,22 @@ nav ul li a:hover {
     align-items: center;
     width: 100%;
     margin-top: 36px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .precios1,
 .precios2 {
     border-radius: 38%;
     padding: 40px;
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    aspect-ratio: 1/1;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10px auto;
 }
 .precios1 {
     background-color: brown;
@@ -154,4 +159,26 @@ nav ul li a:hover {
 
 p {
     color: rgb(174, 0, 255);
+}
+/*Esto hace el mapa no sea enorme ni pequeño tipo que sea a su medida siempre.*/
+iframe {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+}
+/*Apartado para que si la pantalla tiene el ancho de 480 max 
+(Valor sacado por pruebas simulando en chrome el maximo de un tlf y eso) pues que no pete*/
+@media (max-width: 480px) {
+    nav > ul {
+        flex-wrap: wrap; /* Permite que los botones bajen si no cabenEsta opcion hace que las opciones del menu arriba no peten y se "modifiquen" tipo de ponen abajo */
+        justify-content: center;
+        height: auto; 
+    }
+
+    nav ul li a {
+        padding: 10px 8px; /* Reducimos el espacio lateral */
+        font-size: 13px;    /* Un pelo más pequeña la letra */
+        text-align: center;
+    }
 }
