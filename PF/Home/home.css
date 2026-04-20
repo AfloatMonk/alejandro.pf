@@ -168,17 +168,57 @@ iframe {
     margin: 20px auto;
 }
 /*Apartado para que si la pantalla tiene el ancho de 480 max 
-(Valor sacado por pruebas simulando en chrome el maximo de un tlf y eso) pues que no pete*/
-@media (max-width: 480px) {
+/* Apartado para dispositivos móviles (pantallas de 480px o menos) */
+@media screen and (max-width: 480px) {
+    
+    /* 1. Ajustar el menú de navegación */
     nav > ul {
-        flex-wrap: wrap; /* Permite que los botones bajen si no cabenEsta opcion hace que las opciones del menu arriba no peten y se "modifiquen" tipo de ponen abajo */
-        justify-content: center;
-        height: auto; 
+        flex-direction: column; /* Los botones del menú ahora van uno sobre otro */
+        height: auto;
+    }
+
+    nav ul li {
+        width: 100%;
     }
 
     nav ul li a {
-        padding: 10px 8px; /* Reducimos el espacio lateral */
-        font-size: 13px;    /* Un pelo más pequeña la letra */
+        padding: 12px;
+        width: 100%;
         text-align: center;
+    }
+
+    /* Ocultamos el submenú en móvil o lo hacemos relativo para que no flote */
+    nav ul li ul {
+        position: static; 
+        width: 100%;
+    }
+
+    /* 2. Ajustar los globos de precios */
+    .globos {
+        flex-direction: column; /* Dejamos de mostrar uno al lado del otro */
+        gap: 10px;
+    }
+
+    .precios1, .precios2 {
+        aspect-ratio: auto; /* Quitamos la forma circular perfecta si el texto no cabe */
+        border-radius: 20px; /* Es mejor usar bordes redondeados suaves en móvil */
+        width: 80%; /* Que ocupen casi todo el ancho disponible */
+        height: auto;
+        padding: 20px;
+    }
+
+    /* 3. Ajustar el texto y el mapa */
+    .lema {
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .descrp {
+        font-size: 1.1rem; /* Ajustamos tamaño para que sea legible */
+    }
+
+    iframe {
+        width: 95%; /* Que el mapa no toque los bordes del móvil */
+        height: 300px; /* Reducimos la altura para que no ocupe toda la pantalla */
     }
 }
