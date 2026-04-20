@@ -1,3 +1,6 @@
+body {
+    background-image: url(ImagenesHome/Gemini_Generated_Image_ng0t8fng0t8fng0t.png);
+}
 /*Enlaces sin subrayado y que pillen el color que tenga ese div o esa parte */
 a {
     text-decoration: none;
@@ -69,7 +72,7 @@ nav ul li a {
 
 /*Pa poner lo que hace cuando pasas raton encima de los enlaces*/
 nav ul li a:hover {
-    background-image:linear-gradient(to right, rgba(129, 108, 103),rgba(93, 77, 73));
+    background-image: linear-gradient(to right, rgba(129, 108, 103), rgba(93, 77, 73));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -99,6 +102,7 @@ nav ul li a:hover {
     align-self: center;
 
 }
+
 /*Boton de ver todos los planes NO TOCAR QUE HA COSTADO DEMASIADO */
 .tod {
     background-color: rgb(42, 39, 37);
@@ -113,10 +117,11 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     border-style: double;
-    margin:0 auto;
+    margin: 0 auto;
     width: fit-content;
-    cursor:pointer;
+    cursor: pointer;
 }
+
 /*Antiguo 
 .tod {
     border-radius: 20px;
@@ -148,18 +153,31 @@ nav ul li a:hover {
     align-items: center;
     margin: 10px auto;
 }
+
 .precios1 {
-    background-color: brown;
+    background-color: rgb(42, 39, 37);
+    color: rgb(212, 176, 140);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    border: 2px solid rgb(212, 176, 140);
+    outline: 1px solid rgb(212, 176, 140);
 }
+
 .precios2 {
-    background-color: aqua;
+    background-color: rgb(42, 39, 37);
+    color: rgb(212, 176, 140);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    border: 2px solid rgb(212, 176, 140);
+    outline: 1px solid rgb(212, 176, 140);
 }
 
 
 
 p {
-    color: rgb(174, 0, 255);
+    color: rgb(212, 176, 140);
 }
+
 /*Esto hace el mapa no sea enorme ni pequeño tipo que sea a su medida siempre.*/
 iframe {
     width: 100%;
@@ -167,13 +185,13 @@ iframe {
     display: block;
     margin: 20px auto;
 }
-/*Apartado para que si la pantalla tiene el ancho de 480 max 
+
 /* Apartado para dispositivos móviles (pantallas de 480px o menos) */
 @media screen and (max-width: 480px) {
-    
+
     /* 1. Ajustar el menú de navegación */
-    nav > ul {
-        flex-direction: column; /* Los botones del menú ahora van uno sobre otro */
+    nav>ul {
+        flex-direction: column;
         height: auto;
     }
 
@@ -187,38 +205,41 @@ iframe {
         text-align: center;
     }
 
-    /* Ocultamos el submenú en móvil o lo hacemos relativo para que no flote */
+    /* Oculta el submenú en móvil  para que no flote */
     nav ul li ul {
-        position: static; 
+        position: static;
         width: 100%;
     }
 
-    /* 2. Ajustar los globos de precios */
+    /*Ajusta globos*/
     .globos {
-        flex-direction: column; /* Dejamos de mostrar uno al lado del otro */
+        flex-direction: column;
         gap: 10px;
     }
 
-    .precios1, .precios2 {
-        aspect-ratio: auto; /* Quitamos la forma circular perfecta si el texto no cabe */
-        border-radius: 20px; /* Es mejor usar bordes redondeados suaves en móvil */
-        width: 80%; /* Que ocupen casi todo el ancho disponible */
+    .precios1,
+    .precios2 {
+        aspect-ratio: auto;
+        border-radius: 20px;
+        width: 80%;
         height: auto;
         padding: 20px;
     }
 
-    /* 3. Ajustar el texto y el mapa */
+    /* texto y el mapa bien */
     .lema {
         text-align: center;
         padding: 0 10px;
     }
 
+    /*Tamaño para que sea legible*/
     .descrp {
-        font-size: 1.1rem; /* Ajustamos tamaño para que sea legible */
+        font-size: 1.1rem;
     }
 
+    /*Ajustes mapa*/
     iframe {
-        width: 95%; /* Que el mapa no toque los bordes del móvil */
-        height: 300px; /* Reducimos la altura para que no ocupe toda la pantalla */
+        width: 95%;
+        height: 300px;
     }
 }
