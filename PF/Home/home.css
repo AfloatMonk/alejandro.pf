@@ -4,7 +4,16 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.logan{
+    color: rgb(245, 245, 220);
+    font-size: large;
+    margin-bottom: -10px;
+}
 
+.tdireccion{
+    color: rgb(245, 245, 220);
+    margin-top: 20px;
+}
 /*Enlaces sin subrayado y que pillen el color que tenga ese div o esa parte */
 a {
     text-decoration: none;
@@ -180,13 +189,15 @@ nav ul li a:hover {
     border: 2px solid rgb(212, 176, 140);
     outline: 1px solid rgb(212, 176, 140);
 }
-
-
-
+/*Por defecto todas las etiquetas p tengan este color pa no estar repitiendo*/
 p {
     color: rgb(212, 176, 140);
 }
-
+/*Letras arriba mapa centradas*/
+.tdireccion{
+    display: flex;
+    justify-content: center;
+}
 /*Esto hace el mapa no sea enorme ni pequeño tipo que sea a su medida siempre.*/
 iframe {
     width: 100%;
