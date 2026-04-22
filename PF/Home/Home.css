@@ -211,6 +211,7 @@ iframe {
     
     nav ul li {
         width: 100%;
+        justify-content: center;
     }
 
     nav ul li a {
@@ -224,7 +225,13 @@ iframe {
         position: static;
         width: 100%;
     }
-
+    /*Sin esto el apartado de guia de ejercicios tiene un pequeño error visual*/
+    .guia{
+        padding: 11px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
     /*Ajusta globos*/
     .globos {
         flex-direction: column;
