@@ -215,7 +215,7 @@ iframe {
     }
 
     nav ul li a {
-        padding: 12px;
+        padding: 15px;
         width: 100%;
         text-align: center;
     }
@@ -227,7 +227,7 @@ iframe {
     }
     /*Sin esto el apartado de guia de ejercicios tiene un pequeño error visual*/
     .guia{
-        padding: 11px;
+        padding: 15px;
         text-align: center;
         display: flex;
         justify-content: center;
