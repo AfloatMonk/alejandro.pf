@@ -1,6 +1,6 @@
 /*Imagen de fondo*/
 body {
-    background-image: url(ImagenesHome/Gemini_Generated_Image_ng0t8fng0t8fng0t.png);
+    background-image: url(ImagenesHome/BackgroundFinal.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -171,12 +171,11 @@ nav ul li a:hover,
     aspect-ratio: 1/1;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 10px;
+    text-align: center;
     margin: 10px auto;
-}
-
-.precios1,
-.precios2 {
     background-color: rgb(42, 39, 37);
     color: rgb(212, 176, 140);
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -203,12 +202,13 @@ iframe {
 
 /* Configuraciones para que no pete en pantallas pequeñas (pantallas de 480px o menos) */
 @media screen and (max-width: 480px) {
-/*Aspectos visuales del menu de navegación*/
+
+    /*Aspectos visuales del menu de navegación*/
     nav>ul {
         flex-direction: column;
         height: auto;
     }
-    
+
     nav ul li {
         width: 100%;
         justify-content: center;
@@ -225,13 +225,15 @@ iframe {
         position: static;
         width: 100%;
     }
+
     /*Sin esto el apartado de guia de ejercicios tiene un pequeño error visual*/
-    .guia{
+    .guia {
         padding: 15px;
         text-align: center;
         display: flex;
         justify-content: center;
     }
+
     /*Ajusta globos*/
     .globos {
         flex-direction: column;
