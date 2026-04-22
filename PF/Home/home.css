@@ -10,7 +10,12 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
+/*Hacer que el menu vaya abajo con pantalla,*/
+header{
+    position: sticky; 
+    top: 0;
+    z-index: 1000; /*Esto es pa que si fuesen capas el menu este en la mas alta y se vea siempre*/
+}
 /* Crear barra navegación (Horizontal vaya) */
 nav>ul {
     list-style: none;
