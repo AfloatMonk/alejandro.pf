@@ -4,10 +4,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.actual {
+    color: (rgb(212, 176, 140));
+}
 /*Configuración de las letras encima del mapa*/
 .tdireccion {
-    color: rgb(245, 245, 220);
+    color: rgb(212, 176, 140);
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -115,7 +117,7 @@ nav ul li a:hover,
     display: flex;
     justify-content: center;
     margin-top: -25px;
-    color: rgb(245, 245, 220);
+    color:rgb(212, 176, 140);
     font-size: large;
     margin-bottom: -10px;
 }
@@ -207,8 +209,6 @@ iframe {
     max-width: 600px;
     display: block;
     margin: 20px auto;
-    filter: invert(90%) hue-rotate(180deg) brightness(95%) contrast(90%);
-    /*Comando buscado para simular modo noche en el mapa.*/
 }
 
 /* Configuraciones para que no pete en pantallas pequeñas (pantallas de 480px o menos) */
