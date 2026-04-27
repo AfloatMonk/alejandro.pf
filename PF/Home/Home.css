@@ -115,10 +115,6 @@ nav ul li a:hover,
     display: flex;
     justify-content: center;
     margin-top: -25px;
-}
-
-/*Configuraciones de letras y color para el logan*/
-.logan {
     color: rgb(245, 245, 220);
     font-size: large;
     margin-bottom: -10px;
@@ -182,6 +178,21 @@ nav ul li a:hover,
     font-size: 14px;
     border: 2px solid rgb(212, 176, 140);
     outline: 1px solid rgb(212, 176, 140);
+}
+
+.precios1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.precios2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tod:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /*Por defecto todas las etiquetas p tengan este color pa no estar repitiendo*/
