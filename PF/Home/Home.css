@@ -10,7 +10,17 @@ body {
     margin-top: 10px;
     background-image: url(ImagenesHome/BackgroundFinal.png) ;
     background-size: cover;
-    margin-bottom: 10px auto;
+    margin-bottom: 10px;
+    padding-bottom: 50px;
+    /*El comando siguiente se ha realizado por consejo de programador que nos ha asesorado*/
+    clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+}
+.conjunto2 {
+    margin-top: 10px;
+    padding-top: 10px;
+    background-color: rgba(19, 19, 19, 0.233);
+    /*El comando siguiente se ha realizado por consejo de programador que nos ha asesorado*/
+    clip-path: polygon(0 5%, 100% 2%, 100% 100%, 0 100%);
 }
 /*Configuración de las letras encima del mapa*/
 .tdireccion {
@@ -217,10 +227,17 @@ p {
 
 /*Esto hace el mapa no sea enorme ni pequeño tipo que sea a su medida siempre.*/
 iframe {
-    width: 100%;
-    max-width: 600px;
-    display: block;
-    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 55px;
+    padding: 10px 30px;
+    border: 2px solid rgb(212, 176, 140);
+    outline: 1px solid rgb(212, 176, 140);
+    outline-offset: -5px;
+    display: flex;
+    align-items: center;
+    border-style: double;
+    margin: 0 auto;
+    cursor: pointer;
 }
 
 /* Configuraciones para que no pete en pantallas pequeñas (pantallas de 480px o menos) */
