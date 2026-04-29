@@ -18,16 +18,25 @@ body {
 .conjunto2 {
     margin-top: 10px;
     padding-top: 10px;
-    background-color: rgba(19, 19, 19, 0.233);
-    /*El comando siguiente se ha realizado por consejo de programador que nos ha asesorado*/
-    clip-path: polygon(0 5%, 100% 2%, 100% 100%, 0 100%);
+    background-color: rgb(39, 38, 38);
 }
 /*Configuración de las letras encima del mapa*/
 .tdireccion {
-    color: rgb(212, 176, 140);
-    margin-top: 20px;
-    display: flex;
+    border-radius: 55px;
+    max-width: 370px;
     justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 10px auto;
+    background-color: rgb(42, 39, 37);
+    color: rgb(212, 176, 140);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    border: 2px solid rgb(212, 176, 140);
+    outline: 1px solid rgb(212, 176, 140);
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 /*Configuración para que al pasar el raton por la guia de ejercicios parezca clickable, por estetica vaya*/
@@ -239,6 +248,50 @@ iframe {
     margin: 0 auto;
     cursor: pointer;
 }
+/*Configuraciones varias del footer para colores, y formato del mismo.*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #554028;
+    margin-top: 10px;
+}
+
+.izquierda, .medio, .derecha {
+    flex: 1;
+    text-align: center;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+/*Configuración para logo de redes sociales y correo este bien*/
+.medio img{
+    width: 25px ;
+    height: auto;
+}
+
+.medio li p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-right: 50px;
+}
+
+.derecha img {
+    width: 30px;
+    height: auto;
+}
+
+.derecha li  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
 
 /* Configuraciones para que no pete en pantallas pequeñas (pantallas de 480px o menos) */
 @media screen and (max-width: 480px) {
@@ -299,5 +352,10 @@ iframe {
     iframe {
         width: 95%;
         height: 300px;
+    }
+    /*Ajuste footer*/
+    footer{
+        flex-direction: column;
+        text-align: center;
     }
 }
