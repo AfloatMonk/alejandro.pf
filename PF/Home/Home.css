@@ -236,7 +236,7 @@ p {
 
 /*Esto hace el mapa no sea enorme ni pequeño tipo que sea a su medida siempre.*/
 iframe {
-    max-width: 500px;
+    max-width: 480px;
     border-radius: 55px;
     padding: 10px 30px;
     border: 2px solid rgb(212, 176, 140);
