@@ -1,25 +1,29 @@
-/*Imagen de fondo*/
+/*Color de fondo*/
 body {
     background-color: rgb(0, 0, 0);
 
 }
+
 .actual {
     color: rgb(212, 176, 140);
 }
+
 .conjunto1 {
     margin-top: 10px;
-    background-image: url(ImagenesHome/BackgroundFinal.png) ;
+    background-image: url(ImagenesHome/BackgroundFinal.png);
     background-size: cover;
     margin-bottom: 10px;
     padding-bottom: 250px;
     /*El comando siguiente se ha realizado por consejo de programador que nos ha asesorado*/
     clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
 }
+
 .conjunto2 {
     margin-top: 10px;
     padding-top: 10px;
     background-color: rgb(8, 5, 5);
 }
+
 /*Configuración de las letras encima del mapa*/
 .tdireccion {
     border-radius: 55px;
@@ -248,6 +252,7 @@ iframe {
     margin: 0 auto;
     cursor: pointer;
 }
+
 /*Configuraciones varias del footer para colores, y formato del mismo.*/
 footer {
     display: flex;
@@ -258,22 +263,25 @@ footer {
     margin-top: 10px;
 }
 
-.izquierda, .medio, .derecha {
+.izquierda,
+.medio,
+.derecha {
     flex: 1;
     text-align: center;
 }
+
 footer ul {
     list-style: none;
     padding: 0;
 }
 
 /*Configuración para logo de redes sociales y correo este bien*/
-.medio img{
-    width: 25px ;
+.medio img {
+    width: 25px;
     height: auto;
 }
 
-.medio li p{
+.medio li p {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -286,7 +294,7 @@ footer ul {
     height: auto;
 }
 
-.derecha li  p {
+.derecha li p {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -354,8 +362,9 @@ footer ul {
         width: 80%;
         height: 300px;
     }
+
     /*Ajuste footer*/
-    footer{
+    footer {
         flex-direction: column;
         text-align: center;
     }

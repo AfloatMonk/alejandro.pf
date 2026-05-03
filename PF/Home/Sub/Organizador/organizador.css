@@ -1,3 +1,11 @@
+/*Hacer que el menu vaya abajo con pantalla,*/
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /*Esto es pa que si fuesen capas el menu este en la mas alta y se vea siempre*/
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -175,4 +183,52 @@ nav ul li a:hover,
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+}
+
+/*Configuraciones varias del footer para colores, y formato del mismo.*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #554028;
+    margin-top: 10px;
+}
+
+.izquierda,
+.medio,
+.derecha {
+    flex: 1;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+/*Configuración para logo de redes sociales y correo este bien*/
+.medio img {
+    width: 25px;
+    height: auto;
+}
+
+.medio li p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-right: 50px;
+}
+
+.derecha img {
+    width: 30px;
+    height: auto;
+}
+
+.derecha li p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
