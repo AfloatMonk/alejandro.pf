@@ -184,32 +184,36 @@ header {
 @media screen and (max-width: 480px) {
 
     /*Aspectos visuales del menu de navegación*/
-    nav > ul {
-        flex-direction: column; /* Menú en vertical */
-        height: auto;
-        display: flex;
-    }
-
-    nav ul li {
-        width: 100%;
-        display: flex;
+nav > ul {
         flex-direction: column;
-        align-items: center;
-        position: relative;
+        height: auto;
     }
 
-    nav ul li a {
+nav ul li {
         width: 100%;
-        padding: 20px; 
+        border-bottom: 1px solid rgba(255,255,255,0.1); /* Para que se separe un poquillo */
+    }
+nav ul li a {
+        width: 100%;
+        padding: 15px; 
         text-align: center;
+        box-sizing: border-box;
     }
 
     /*  estático para que no este en medio  del contenido y empuje el resto */
-    nav ul li ul {
+nav ul li ul {
+        display: none; 
         position: static; 
         width: 100%;
+        background-color: rgb(25, 34, 42); 
     }
-
+nav ul li:hover > ul {
+        display: block;
+    }
+    nav ul li ul li a {
+        padding: 12px;
+        font-size: 13px; /* Un poco más pequeño para jerarquía */
+    }
     /* div de Introducción */
     .introduccion {
         padding: 0 20px; 
