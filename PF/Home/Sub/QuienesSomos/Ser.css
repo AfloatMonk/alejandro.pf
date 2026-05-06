@@ -182,6 +182,7 @@ header {
 }
 
 /* Configuraciones para que no pete en pantallas pequeñas (pantallas de 480px o menos) */
+
 @media screen and (max-width: 480px) {
 
     /*Aspectos visuales del menu de navegación*/
@@ -202,7 +203,7 @@ header {
         box-sizing: border-box;
     }
 
-    /*  estático para que no este en medio  del contenido y empuje el resto */
+    /*  Estático para que no este en medio  del contenido y empuje el resto */
     nav ul li ul {
         display: none;
         position: static;
