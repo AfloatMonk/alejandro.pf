@@ -180,54 +180,61 @@ header {
     z-index: 1000;
     /*Esto es pa que si fuesen capas el menu este en la mas alta y se vea siempre*/
 }
+
 /* Configuraciones para que no pete en pantallas pequeñas (pantallas de 480px o menos) */
 @media screen and (max-width: 480px) {
 
     /*Aspectos visuales del menu de navegación*/
-nav > ul {
+    nav>ul {
         flex-direction: column;
         height: auto;
         padding-top: 60px;
     }
 
-nav ul li {
+    nav ul li {
         width: 100%;
     }
-nav ul li a {
+
+    nav ul li a {
         width: 100%;
-        padding: 15px; 
+        padding: 15px;
         text-align: center;
         box-sizing: border-box;
     }
-    
+
     /*  estático para que no este en medio  del contenido y empuje el resto */
-nav ul li ul {
-        display: none; 
-        position: static; 
+    nav ul li ul {
+        display: none;
+        position: static;
         width: 100%;
-        background-color: rgb(25, 34, 42); 
+        background-color: rgb(25, 34, 42);
     }
-nav ul li:hover > ul {
+
+    nav ul li:hover>ul {
         display: block;
     }
+
     nav ul li ul li a {
         padding: 12px;
-        font-size: 13px; /* Un poco más pequeño para jerarquía */
+        font-size: 13px;
+        /* Un poco más pequeño para jerarquía */
     }
+
     .guia {
         padding: 15px;
         text-align: center;
         display: flex;
         justify-content: center;
     }
+
     /* div de Introducción */
     .introduccion {
-        padding: 0 20px; 
+        padding: 0 20px;
     }
 
     p {
-        max-width: 100%; 
-        font-size: 16px; 
+        max-width: 100%;
+        font-size: 16px;
     }
 
     h1 {
@@ -237,17 +244,19 @@ nav ul li:hover > ul {
 
     /* Footer que se vea bien y eso */
     footer {
-        flex-direction: column; 
+        flex-direction: column;
         gap: 20px;
         padding: 30px 10px;
     }
 
-    .izquierda, .medio, .derecha {
+    .izquierda,
+    .medio,
+    .derecha {
         width: 100%;
     }
 
     .medio li p {
-        margin-right: 0; 
+        margin-right: 0;
     }
 
     .ft {
