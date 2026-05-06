@@ -3,6 +3,9 @@ body {
     background-color: #1A1A1B;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .introduccion {
@@ -10,13 +13,14 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    flex: 1;
 }
 
 h1 {
     text-align: center;
     margin-top: 36px;
     width: 100%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #C5A059;
     letter-spacing: 2px;
 }
@@ -25,7 +29,7 @@ h2 {
     text-align: center;
     width: 100%;
     margin-top: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #C5A059;
     letter-spacing: 2px;
 }
@@ -128,6 +132,7 @@ footer {
     padding: 10px;
     background-color: #554028;
     margin-top: 10px;
+
 }
 
 .izquierda,
