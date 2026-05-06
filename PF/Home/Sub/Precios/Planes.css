@@ -156,6 +156,17 @@ nav ul li a:hover,
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+.tabla {
+    background-color: rgb(42, 39, 37);
+    color: rgb(212, 176, 140);
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.tabla td{
+    padding: 10px;
+}
+
 /*Configuraciones varias del footer para colores, y formato del mismo.*/
 footer {
     display: flex;
