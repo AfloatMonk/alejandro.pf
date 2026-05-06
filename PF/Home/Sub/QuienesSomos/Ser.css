@@ -180,3 +180,71 @@ header {
     z-index: 1000;
     /*Esto es pa que si fuesen capas el menu este en la mas alta y se vea siempre*/
 }
+/* Configuraciones para que no pete en pantallas pequeñas (pantallas de 480px o menos) */
+@media screen and (max-width: 480px) {
+
+    /*Aspectos visuales del menu de navegación*/
+    nav > ul {
+        flex-direction: column; /* Menú en vertical */
+        height: auto;
+    }
+
+    nav ul li {
+        width: 100%;
+        justify-content: center;
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+
+    nav ul li a {
+        width: 100%;
+        padding: 20px; 
+        text-align: center;
+    }
+
+    /*  estático para que no este en medio  del contenido y empuje el resto */
+    nav ul li ul {
+        position: static; 
+        display: block;
+        width: 100%;
+        min-width: 100%;
+    }
+
+    /* div de Introducción */
+    .introduccion {
+        padding: 0 20px; 
+    }
+
+    p {
+        max-width: 100%; 
+        font-size: 16px; 
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-top: 20px;
+    }
+
+    /* Footer que se vea bien y eso */
+    footer {
+        flex-direction: column; 
+        gap: 20px;
+        padding: 30px 10px;
+    }
+
+    .izquierda, .medio, .derecha {
+        width: 100%;
+    }
+
+    .medio li p {
+        margin-right: 0; 
+    }
+
+    .ft {
+        width: 100px;
+        height: auto;
+    }
+
+    footer ul li {
+        margin-bottom: 15px;
+    }
+}
