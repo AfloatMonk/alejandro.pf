@@ -187,12 +187,15 @@ header {
     nav > ul {
         flex-direction: column; /* Menú en vertical */
         height: auto;
+        display: flex;
     }
 
     nav ul li {
         width: 100%;
-        justify-content: center;
-        border-bottom: 1px solid rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
     }
 
     nav ul li a {
@@ -204,9 +207,7 @@ header {
     /*  estático para que no este en medio  del contenido y empuje el resto */
     nav ul li ul {
         position: static; 
-        display: block;
         width: 100%;
-        min-width: 100%;
     }
 
     /* div de Introducción */
