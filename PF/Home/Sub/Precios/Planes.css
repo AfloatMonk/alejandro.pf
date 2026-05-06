@@ -105,7 +105,10 @@ nav ul li a:hover,
     gap: 20px;
 }
 
-.Precios1, .Precios2, .Precios3, .Precios4 {  
+.Precios1,
+.Precios2,
+.Precios3,
+.Precios4 {
     border-radius: 38%;
     padding: 40px;
     width: 100%;
@@ -131,18 +134,22 @@ nav ul li a:hover,
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
 .Precios2:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
 .Precios3:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
 .Precios4:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
 /*Configuraciones varias del footer para colores, y formato del mismo.*/
 footer {
     display: flex;
