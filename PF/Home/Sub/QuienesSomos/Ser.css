@@ -1,7 +1,40 @@
 /*Color de fondo*/
 body {
-    background-color: rgb(212, 145, 145);
+    background-color: #1A1A1B;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
 
+.introduccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 36px;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    color: #C5A059;
+    letter-spacing: 2px;
+}
+
+h2 {
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    color: #C5A059;
+    letter-spacing: 2px;
+}
+
+p {
+    color: #E0E0E0;
+    text-align: center;
+    max-width: 750px;
+    margin-top: 30px;
 }
 
 /*Remarcamos la sección del navegador conforme la página que nos encontramos*/
