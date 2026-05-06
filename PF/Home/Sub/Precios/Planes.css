@@ -1,7 +1,15 @@
 /*Color de fondo*/
 body {
-    background-color: rgb(212, 145, 145);
+    background-color: rgb(87, 85, 85);
 
+}
+
+/*Hacer que el menu vaya abajo con pantalla,*/
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /*Esto es pa que si fuesen capas el menu este en la mas alta y se vea siempre*/
 }
 
 /*Remarcamos la sección del navegador conforme la página que nos encontramos*/
@@ -87,6 +95,54 @@ nav ul li a:hover,
     color: transparent;
 }
 
+.PreciosAll {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 36px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Precios1, .Precios2, .Precios3, .Precios4 {  
+    border-radius: 38%;
+    padding: 40px;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    margin: 10px auto;
+    background-color: rgb(42, 39, 37);
+    color: rgb(212, 176, 140);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    border: 2px solid rgb(212, 176, 140);
+    outline: 1px solid rgb(212, 176, 140);
+}
+
+.Precios1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.Precios2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.Precios3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.Precios4:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 /*Configuraciones varias del footer para colores, y formato del mismo.*/
 footer {
     display: flex;
@@ -133,12 +189,4 @@ footer ul {
     align-items: center;
     justify-content: center;
     gap: 10px;
-}
-
-/*Hacer que el menu vaya abajo con pantalla,*/
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    /*Esto es pa que si fuesen capas el menu este en la mas alta y se vea siempre*/
 }
