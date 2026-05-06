@@ -6,6 +6,6 @@ Se puede observar que tenemos un archivo index.html, esto lo hemos realizado as�
 que hemos encontrado ha sido hacerlo de esta forma para no perder registros de cambios, este archivo incluye un pequeño clickable por si la redirección automática no funcionase. 
 
 Se puede observan todas las versiones y cambios que hemos ido haciendo poco a poco, a pesar que sea solo un usuario quien lo suba, esto ha sido trabajado de todos ya que
-para evitar saturaciones ibamos haciendo el código pero solo 1 persona tenía el final y subía los cambios.
+para evitar saturaciones ibamos haciendo el código pero solo 1 persona tenía el final y subía los cambios, es un poco más tedioso pero asi evitábamos problemas de sincronización con la página.
 
 Esperamos que disfruten del proyecto y sea de su agrado.
