@@ -1,7 +1,9 @@
 /*Color de fondo*/
 body {
-    background-color: rgb(87, 85, 85);
-
+    background-image: url(../../ImagenesHome/ImagenPrecios.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /*Hacer que el menu vaya abajo con pantalla,*/
@@ -171,7 +173,7 @@ nav ul li a:hover,
 }
 
 .tabla {
-    background-color: rgb(42, 39, 37);
+    background-color: rgba(42, 39, 37, 0.8);
     color: rgb(212, 176, 140);
     display: flex;
     justify-content: space-around;
