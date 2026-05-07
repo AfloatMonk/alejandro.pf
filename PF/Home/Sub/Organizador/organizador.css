@@ -139,7 +139,7 @@ button:active {
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 10px 20px;
     background-color: rgb(15, 24, 32);
 }
