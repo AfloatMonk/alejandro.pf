@@ -2,7 +2,7 @@
 body {
     background-color: #1A1A1B;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 14px;
+    font-size: 15px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -39,6 +39,7 @@ p {
     text-align: center;
     max-width: 750px;
     margin-top: 30px;
+    font-size: 17px;
 }
 
 /*Remarcamos la sección del navegador conforme la página que nos encontramos*/
