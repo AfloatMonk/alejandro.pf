@@ -23,6 +23,20 @@ a {
     color: inherit;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgb(15, 24, 32);
+}
+
+.navlogo {
+    height: 40px;
+    width: auto;
+    margin-right: 20px;
+}
+
 /* Crear barra navegación (Horizontal vaya) */
 nav>ul {
     list-style: none;
@@ -218,6 +232,15 @@ footer ul {
 
 /* Configuraciones para que no pete en pantallas pequeñas (pantallas de 480px o menos) */
 @media screen and (max-width: 480px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navlogo {
+        height: 50px;
+    }
 
     /*Aspectos visuales del menu de navegación*/
     nav>ul {

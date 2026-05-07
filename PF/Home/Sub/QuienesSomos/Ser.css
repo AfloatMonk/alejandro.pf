@@ -52,6 +52,14 @@ a {
     color: inherit;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgb(15, 24, 32);
+}
+
 /* Crear barra navegación (Horizontal vaya) */
 nav>ul {
     list-style: none;
@@ -62,6 +70,12 @@ nav>ul {
     align-items: stretch;
     height: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navlogo {
+    height: 40px;
+    width: auto;
+    margin-right: 20px;
 }
 
 /* Menu de navegación de elementos lista*/
@@ -184,6 +198,14 @@ header {
 /* Configuraciones para que no pete en pantallas pequeñas (pantallas de 480px o menos) */
 
 @media screen and (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navlogo {
+        height: 50px;
+    }
 
     /*Aspectos visuales del menu de navegación*/
     nav>ul {
@@ -215,6 +237,7 @@ header {
         display: flex;
         justify-content: center;
     }
+
     /* div de Introducción */
     .introduccion {
         padding: 0 20px;
