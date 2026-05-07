@@ -30,11 +30,11 @@ Nivel Avanzado
 
 Bloque de Potencia (EMOM 15 min):
 
-    Minuto 1: 15 Burpees sobre caja.
+    Minuto 0: 15 Burpees sobre caja.
 
-    Minuto 2: 20 Kettlebell Swings pesados.
+    Minuto 5: 20 Kettlebell Swings pesados.
 
-    Minuto 3: 15 flexiones pliométricas (con palmada)
+    Minuto 10: 15 flexiones pliométricas (con palmada)
 
 Finalizador de metabólico: 500m de remo o 1km de asalto en bici a máxima intensidad.
 
