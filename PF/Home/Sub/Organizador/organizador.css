@@ -7,19 +7,20 @@ header {
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  background-image: url("https://etenonfitness.com/wp-content/uploads/2024/01/gestion-gym-2024.gif");
-  
- 
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-attachment: fixed; 
-  
+    margin: 0;
+    padding: 0;
+    background-image: url("https://etenonfitness.com/wp-content/uploads/2024/01/gestion-gym-2024.gif");
 
-  min-height: 100vh; 
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+    min-height: 100vh;
 }
+
 a {
     text-decoration: none;
     color: inherit;
@@ -32,10 +33,12 @@ body::before {
     background: rgba(0, 0, 0, 0.4);
     z-index: -1;
 }
+
 .actual {
     color: rgb(212, 176, 140);
-    
+
 }
+
 h1 {
     text-align: center;
     color: white;
@@ -97,7 +100,7 @@ button:active {
 
 .day:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .day h3 {
@@ -112,6 +115,7 @@ button:active {
     margin-top: 10px;
     border-radius: 8px;
 }
+
 /*    modification */
 /* Crear barra navegación (Horizontal vaya) */
 nav>ul {
@@ -232,7 +236,9 @@ footer ul {
     justify-content: center;
     gap: 10px;
 }
+
 @media screen and (max-width: 480px) {
+
     /*Aspectos visuales del menu de navegación*/
     nav>ul {
         flex-direction: column;
@@ -262,5 +268,12 @@ footer ul {
         text-align: center;
         display: flex;
         justify-content: center;
+    }
+
+    /*Ajuste footer*/
+
+    footer {
+        flex-direction: column;
+        text-align: center;
     }
 }

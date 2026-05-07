@@ -163,7 +163,8 @@ nav ul li a:hover,
     justify-content: space-around;
     text-align: center;
 }
-.tabla td{
+
+.tabla td {
     padding: 10px;
 }
 
@@ -214,8 +215,10 @@ footer ul {
     justify-content: center;
     gap: 10px;
 }
+
 /* Configuraciones para que no pete en pantallas pequeñas (pantallas de 480px o menos) */
 @media screen and (max-width: 480px) {
+
     /*Aspectos visuales del menu de navegación*/
     nav>ul {
         flex-direction: column;
@@ -245,5 +248,29 @@ footer ul {
         text-align: center;
         display: flex;
         justify-content: center;
+    }
+
+    .comparativa {
+        width: 100%;
+        overflow-x: auto;
+        margin-bottom: 20px;
+    }
+
+    .tabla {
+        display: table;
+        min-width: 600px;
+    }
+
+    .table td,
+    .tabla th {
+        font-size: 12px;
+        padding: 8px 5px;
+    }
+
+    /*Ajuste footer*/
+
+    footer {
+        flex-direction: column;
+        text-align: center;
     }
 }
