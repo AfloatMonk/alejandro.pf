@@ -9,21 +9,36 @@ header {
 body {
     margin: 0;
     padding: 0;
-    background-image: url("https://etenonfitness.com/wp-content/uploads/2024/01/gestion-gym-2024.gif");
-
-
+    background-color: rgb(0, 255, 234);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
-
     min-height: 100vh;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+#aviso {
+    color: rgb(212, 176, 140);
+    font-size: 14px;
+        background-color: rgb(42, 39, 37);
+    color: rgb(212, 176, 140);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    border-radius: 55px;
+    padding: 10px 30px;
+    border: 2px solid rgb(212, 176, 140);
+    outline: 1px solid rgb(212, 176, 140);
+    outline-offset: -5px;
+    display: flex;
+    align-items: center;
+    border-style: double;
+    margin: 0 auto;
+    width: fit-content;
 }
 
 body::before {
@@ -236,6 +251,62 @@ footer ul {
     justify-content: center;
     gap: 10px;
 }
+
+.planestodos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 36px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.plan1,
+.plan2,
+.plan3,
+.plan4 {
+    border-radius: 38%;
+    padding: 40px;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    margin: 10px auto;
+    background-color: rgb(42, 39, 37);
+    color: rgb(212, 176, 140);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    border: 2px solid rgb(212, 176, 140);
+    outline: 1px solid rgb(212, 176, 140);
+}
+
+.plan1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.plan2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.plan3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.plan4:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 
 @media screen and (max-width: 480px) {
 

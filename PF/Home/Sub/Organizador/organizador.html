@@ -10,59 +10,118 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../../Home.html">Inicio</a></li>
-                <li><a href="../Precios/Planes.html">Precios</a></li>
-                <li class="actual"><a href="../Organizador/organizador.html">Organizador de
-                        Ejercicios</a></li>
-                <li class="guia">Guías de Ejercicios
-                    <ul>
-                        <li><a href="https://www.simplyfitness.com/es/pages/workout-exercise-guides"
-                                target="_blank">Todos los
-                                Ejercicios</a></li>
-                        <li><a href="https://www.simplyfitness.com/es/pages/chest-exercise-guides"
-                                target="_blank">Pectorales</a></li>
-                        <li><a href="https://www.simplyfitness.com/es/pages/triceps-exercise-guides"
-                                target="_blank">Tríceps</a></li>
-                        <li><a href="https://www.simplyfitness.com/es/pages/calves-exercise-guides"
-                                target="_blank">Gemelos</a></li>
-                        <li><a href="https://www.simplyfitness.com/es/pages/back-exercise-guides"
-                                target="_blank">Espalda</a></li>
-                        <li><a href="https://www.simplyfitness.com/es/pages/biceps-exercise-guides"
-                                target="_blank">Bíceps</a></li>
-                        <li><a href="https://www.simplyfitness.com/es/pages/abdominals-exercise-guides"
-                                target="_blank">Abdominales</a>
-                        </li>
-                        <li><a href="https://www.simplyfitness.com/es/pages/shoulders-exercise-guides"
-                                target="_blank">Hombros</a></li>
-                        <li><a href="https://www.simplyfitness.com/es/pages/legs-exercise-guides"
-                                target="_blank">Piernas</a></li>
-                    </ul>
-                </li>
-                <li><a href="../../Sub/QuienesSomos/Ser.html">Sobre Nosotros</a></li>
+        <header>
+                <nav>
+                        <ul>
+                                <li><a href="../../Home.html">Inicio</a></li>
+                                <li><a href="../Precios/Planes.html">Precios</a></li>
+                                <li class="actual"><a href="../Organizador/organizador.html">Organizador de
+                                                Ejercicios</a></li>
+                                <li class="guia">Guías de Ejercicios
+                                        <ul>
+                                                <li><a href="https://www.simplyfitness.com/es/pages/workout-exercise-guides"
+                                                                target="_blank">Todos los
+                                                                Ejercicios</a></li>
+                                                <li><a href="https://www.simplyfitness.com/es/pages/chest-exercise-guides"
+                                                                target="_blank">Pectorales</a></li>
+                                                <li><a href="https://www.simplyfitness.com/es/pages/triceps-exercise-guides"
+                                                                target="_blank">Tríceps</a></li>
+                                                <li><a href="https://www.simplyfitness.com/es/pages/calves-exercise-guides"
+                                                                target="_blank">Gemelos</a></li>
+                                                <li><a href="https://www.simplyfitness.com/es/pages/back-exercise-guides"
+                                                                target="_blank">Espalda</a></li>
+                                                <li><a href="https://www.simplyfitness.com/es/pages/biceps-exercise-guides"
+                                                                target="_blank">Bíceps</a></li>
+                                                <li><a href="https://www.simplyfitness.com/es/pages/abdominals-exercise-guides"
+                                                                target="_blank">Abdominales</a>
+                                                </li>
+                                                <li><a href="https://www.simplyfitness.com/es/pages/shoulders-exercise-guides"
+                                                                target="_blank">Hombros</a></li>
+                                                <li><a href="https://www.simplyfitness.com/es/pages/legs-exercise-guides"
+                                                                target="_blank">Piernas</a></li>
+                                        </ul>
+                                </li>
+                                <li><a href="../../Sub/QuienesSomos/Ser.html">Sobre Nosotros</a></li>
 
-            </ul>
-        </nav>
-    </header>
-    <div class="container">
-        <h1> Calendario de Gimnasio</h1>
+                        </ul>
+                </nav>
+        </header>
+        <div class="container">
+                <h1> Calendario de Gimnasio</h1>
 
-        <div class="controls">
-            <input type="date" id="date">
-            <input type="text" id="activity" placeholder="Actividad (Ej: Pecho, Cardio)">
-            <button onclick="addActivity()">Añadir actividad</button>
+                <div class="controls">
+                        <input type="date" id="date">
+                        <input type="text" id="activity" placeholder="Actividad (Ej: Pecho, Cardio)">
+                        <button onclick="addActivity()">Añadir actividad</button>
+                </div>
+
+                <div class="calendar" id="calendar"></div>
+        </div>
+        <p id="aviso">
+                Las actividades se eliminan automáticamente después de 7 días
+        </p>
+        <script src="organizador.js">
+        </script>
+
+        <div class="planestodos">
+                <div class="plan1">
+                        <h3>Plan "Leyenda en Desarrollo"</h3>
+
+                        <p>Sentadillas: 15 repeticiones x 3 series</p>
+
+                        <p>Flexiones inclinadas o asistidas: 10 repeticiones x 3 series</p>
+
+                        <p>Puente de Glúteo isométrico: 3 series de 45 segundos</p>
+
+                        <p>Remo invertido en barra: 12 repeticiones x 3 series</p>
+
+                        <p>Crunch abdominal dinámico: 20 repeticiones x 3 series</p>
+                </div>
+                <div class="plan2">
+                        <h3>Plan "Titán Total"</h3>
+
+                        <p>Sentadilla trasera con barra: 4 series x 8 repeticiones</p>
+
+                        <p>Press de banca plano: 4 series x 8 repeticiones</p>
+
+                        <p>Peso muerto convencional: 3 series x 10 repeticiones</p>
+
+                        <p>Dominadas pronas o jalón al pecho: 4 series al fallo técnico</p>
+
+                        <p>Press militar con mancuernas: 3 series x 12 repeticiones</p>
+                </div>
+                <div class="plan3">
+                        <h3>Plan "Élite Avanzado"</h3>
+
+                        <p>Bloque de Potencia (EMOM 15 min):</p>
+
+                        <p>Minuto 0: 15 Burpees sobre caja</p>
+
+                        <p>Minuto 5: 20 Kettlebell Swings pesados.</p>
+
+                        <p>Minuto 10: 15 flexiones pliométricas (con palmada)</p>
+
+                        <p>Finalizador de metabólico: 500m de remo o 1km de
+                                asalto en bici a máxima intensidad</p>
+                </div>
+                <div class="plan4">
+                        <h3>Plan "Maestro sin Límites"</h3>
+
+                        <p>Desbloqueo de Cadena Posterior: Estiramiento dinámico (3 rondas).</p>
+
+                        <p>Flow de yoga: Guerrero I y Guerrero II: Sostener 1 minuto por postura</p>
+
+                        <p>Liberación miofascial con foam roller: 10 minutos de foam roller en tren inferior</p>
+
+                        <p>Plancha frontal con control respiratorio: 3 series de 1 minuto (foco en respiración)</p>
+
+                        <p>Movilidad escapular controlada: 3 series x 15 rotaciones controladas</p>
+
+                </div>
+
         </div>
 
-        <div class="calendar" id="calendar"></div>
-    </div>
-    <p id="aviso" style="color: rgb(212, 176, 140); font-size: 14px;">
-        Las actividades se eliminan automáticamente después de 7 días
-    </p>
-    <script src="organizador.js">
-    </script>
-<footer>
+        <footer>
                 <div class="izquierda">
                         <ul>
                                 <li>
