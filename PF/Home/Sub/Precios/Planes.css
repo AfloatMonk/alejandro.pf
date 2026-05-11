@@ -172,6 +172,28 @@ nav ul li a:hover,
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+.tod {
+    background-color: rgb(42, 39, 37);
+    color: rgb(212, 176, 140);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    border-radius: 55px;
+    padding: 10px 30px;
+    border: 2px solid rgb(212, 176, 140);
+    outline: 1px solid rgb(212, 176, 140);
+    outline-offset: -5px;
+    display: flex;
+    align-items: center;
+    border-style: double;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.tod:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 .tabla {
     background-color: rgba(42, 39, 37, 0.8);
     color: rgb(212, 176, 140);
