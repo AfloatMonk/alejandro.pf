@@ -6,6 +6,10 @@ header {
     /*Esto es pa que si fuesen capas el menu este en la mas alta y se vea siempre*/
 }
 
+p {
+    color: rgb(212, 176, 140)
+}
+
 body {
     margin: 0;
     padding: 0;
