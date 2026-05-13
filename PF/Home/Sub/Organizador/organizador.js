@@ -101,10 +101,10 @@ function eliminarActividad(date, index) {
         renderCalendar();
     }
     if (diffDays <= 2) {
-    textSpan.style.color = "red";
-} else if (diffDays <= 4) {
-    textSpan.style.color = "orange";
-}
+        textSpan.style.color = "red";
+    } else if (diffDays <= 4) {
+        textSpan.style.color = "orange";
+    }
 }
 
 renderCalendar();
